@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    overflow: hidden;
+    background:rgb(11, 11, 206); 
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 9 2px;
+    padding-left: 80px;
+}
+
+.navbar a:hover {
+    background-color:rgb(44, 41, 41);
+    color: cyan;
+}
+.content {
+    padding: 0;
+    min-height: calc(100vh - 60px - 40px); /* Adjust based on navbar and footer height */
+    transition: background 0.5s;
+}
+.content-section {
+    display: none;
+    padding: 16px;
+}
+.content-section.active {
+    display: block;
+    
+}
+#home.active {
+    background-image: url("Background home image.jpg");
+    background-size: cover;
+    background-position: center;
+    color: cyan; 
+    height: calc(100vh - 60px - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#home.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(8px);
+    z-index: -1;
+}
+#home .blur-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:  rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1;
+}
+#about-us.active {
+    background-image: url("Beautiful Acrylic Nails for Stunning Manicures.jpg");
+    background-size: cover;
+    background-position: center;
+    color: cyan; /* Ensure text is readable against background image */
+    height: calc(100vh - 60px - 40px); /* Adjust based on navbar and footer height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#about-us.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(8px);
+    z-index: -1;
+}
+#about-us .blur-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:  rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1;
+}
+#active {
+    background-image: url("Beautiful Acrylic Nails for Stunning Manicures.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensure text is readable against background image */
+    height: calc(100vh - 60px - 40px); /* Adjust based on navbar and footer height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.packages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.packages img{
+    height: 200px;
+}
+.packagesItem{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.btn{
+    background-color: grey;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0;
+}
+#services.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(8px);
+    z-index: -1;
+}
+#faqs{
+    position: absolute;
+    top: 12px;
+    height: auto;
+}
+#blog{
+    position: absolute;
+    top: 12px;
+    height:150vh;
+    
+}
+
+#blur-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:  rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.footer {
+    background-color:black;
+    color: crimson;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    top: 90rem;
+    
+}
+.wrapper{
+    background-color: blanchedalmond;
+    background-image: url("welcome.html");
+    background-size: cover;
+    background-position: center;
+
+}
+

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARADISE NAIL PARLOUR</title>
+   <link rel="stylesheet" href="style.css">
+   
+   
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.getElementsByClassName('content-section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            // Show the selected section
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+
+            // Remove background image from the content div
+            var contentDiv = document.querySelector('.content');
+            contentDiv.style.background = 'none';
+
+            // Add background image if home section is selected
+            if (sectionId === 'home') {
+                contentDiv.style.backgroundImage = 'url("hey.jpg")';
+                contentDiv.style.backgroundSize = 'cover';
+                contentDiv.style.backgroundPosition = 'center';
+            }
+        }
+    </script>
+</head>
+
+
+<div class="navbar">
+    <a href="javascript:void(0);" onclick="showSection('home')">HOME</a>
+    <a href="javascript:void(0);" onclick="showSection('about-us')">ABOUT US</a>
+    <a href="javascript:void(0);" onclick="showSection('services')">SERVICES</a>
+    <a href="javascript:void(0);" onclick="showSection('blog')">BLOG</a>
+    <a href="javascript:void(0);" onclick="showSection('faqs')">FAQS</a>
+    <a href="javascript:void(0);" onclick="showSection('login')">Login</a>
+
+
+</div>
+
+<div class="content">
+    <div id="home" class="content-section active">
+        <div class="blur-overlay">
+        <h2>Paradise Nail Parlour</h2>
+        <p>Welcome to Paradise Nails luxury touch, where tranquility meets beauty in the heart of Nairobi. As the premier destination for rejuvenation and pampering, we invite you to experience a world of serenity and sophistication like no other. At Whispernails luxury touch, we understand the importance of self-care and the impact it has on your overall well-being. Allow us to take you on a journey of relaxation and transformation through our exquisite range of services.</p>
+    </div>
+    </div>
+
+
+    <div id="about-us" class="content-section">
+        <div class="blur-overlay">
+        <h2>Why We Are The Best?</h2>
+       <p>Since 2017, Paradise Nails Parlour has aimed to perfect the art of nail pampering, manicure and pedicure while building on creativity in nail painting. We are a team of young, passionate, talented, creative ,and caring individuals dedicated to doing great nails and giving our clients amazing experiences.
+        We keep evolving to keep up with the latest nail trends and we are the best nail salon in Nairobi offering our clients the best nailcare services. When you walk into our doors, every moment of your visit should be enjoyable, relaxed and worthwhile.
+        Our customer service rule is that we treat you the way we would love to be treated. 
+        We maintain unmatched levels of cleanliness and neatness.
+        We understand that styles and tastes are unique with every individual and our services have been created carefully to meet every taste and style that comes with every unique customer.</p>
+        Rest assured that whatever your TASTE & STYLE may be, we will NAIL IT!</p>
+    </div>
+    </div>
+
+
+    <div id="services" class="content-section">
+        <div class="blur-overlay">
+        <h3>What we offer</h3>
+        <ul>OUR SERVICES
+
+        <div class="packages">
+            <div class="packagesItem">
+
+            <li>APPLICATION AFFAIR</li><br/>
+            <img src="Nail Inspo_ Fresh Ideas for Your Next Manicure.jpg">
+            <p>Ksh 500</p>
+
+            <input class="btn5*" type="button"value="book now" required>
+            </div>
+
+            <div class="packagesItem">
+                <li>MANICURE AFFAIR </li></br>
+                <img src="Artifical nails with glue fake nail tips with design Detachable press on nails long Fake Nail Finished Nail Piece Sticker.jpg">
+                <p>Ksh 1000</p>
+                <input class="btn5*" type="button"value="book now" required>
+                </div>
+    
+                <div class="packagesItem">
+                <li>OVERLAYS AFFAIR</li></br>
+                <img src="Long Coffin Ballerina False Nails Blue Ripple Design Wearable Fake Nails Full Cover Acrylic Nail Tips Manicure.jpg">
+                <p>Ksh 1400</p>
+                <input class="btn5*" type="button"value="book now" required>
+                </div>
+    
+                <div class="packagesItem">
+                    <li>ACRYLICS</li></br>
+                    <img src="Acrylic nails.jpg">
+                    <p>Ksh 1500</p>
+                    <input class="btn5*" type="button"value="book now" required>
+                </div>
+                <div class="packagesItem">
+                    <li>PEDICURE</li></br>
+                    <img src="Πεντικιούρ την Άνοιξη_ 17 μοντέρνες ιδέες.jpg">
+                    <p>Ksh 1100</p>
+                    <input class="btn5*" type="button"value="book now" required>
+                    </div>
+        
+                    <div class="packagesItem">
+                    <li>MANICURE AND PEDICURE (matching set)</li>
+                    <img src="Curso completo gratuito manicure e pedicure _ cutilagem perfeita.jpg">
+                    <p>Ksh 2200</p>
+                    <input class="btn5*" type="button"value="book now" required>
+                    </div>
+        
+        
+                    <div class="packagesItem">
+                        <li>SHORT FRENCH TIPS</li></br>
+                        <img src="Orange French Tip Press On Nails, Cute Summer Idea Simple Fake Nails.jpg">
+                        <p>Ksh 1400</p>
+                        <input class="btn5*" type="button"value="book now" required>
+                        </div>
+
+                        
+                            <div class="packagesItem">
+                                <li>TRENDY</li></br>
+                                <img src="Pedicure.jpg">
+                                <p>Ksh 1500</p>
+                                <input class="btn5*" type="button"value="book now" required>
+                                </div>
+
+                                <div class="packagesItem">
+                                    <li>PRESS ON'S</li></br>
+                                    <img src="Latte Press On Nails - CUSTOM SIZE _ Long Square.jpg">
+                                    <p>Ksh 1300</p>
+                                    <input class="btn5*" type="button"value="book now" required>
+                                    </div>
+
+                                    <div class="packagesItem">
+                                        <li>SQUARE ACRILICS</li></br>
+                                        <img src="Short Square Coffin False Nails Fake Nail.jpg">
+                                        <p>Ksh 1600</p>
+                                        <input class="btn5*" type="button"value="book now" required>
+                                        </div>
+
+                                        <div class="packagesItem">
+                                            <li>SUMMER NAILS</li></br>
+                                            <img src="Summer Coffin Nails.jpg">
+                                            <p>Ksh 1000</p>
+                                            <input class="btn5*" type="button"value="book now" required>
+                                            </div> 
+                         </ul>
+        </div>  
+        <div class="content">
+            <div id="blog" class="content-section active">
+                <div class="blur-overlay">
+                    <h3>FEBRUARY 14,2024</h3>
+                    <h3>Demystifying Nail Care for Gents</h3>
+                    <p>I know what you’re thinking, ‘nail care for men?’ Yup, you heard us right. Nail care isn’t just a ladies’ affair. It isn’t only about flashy colours or aesthetic designs, it’s about presenting a well-groomed, polished...</p>
+                    
+            </div>
+            </div>
+        
+        <div id="blog" class="content-section active">
+            <div class="blur-overlay">
+                
+            <h3>FEBRUARY 14,2024</h3>
+            <h3>Demystifying Nail Care for Gents</h3>
+            <p>I know what you’re thinking, ‘nail care for men?’ Yup, you heard us right. Nail care isn’t just a ladies’ affair. It isn’t only about flashy colours or aesthetic designs, it’s about presenting a well-groomed, polished...</p>
+            
+            <h3>DECEMBER 5,2023</h3>
+            <h3>All You Need to Know About Hangnails</h3>
+            <p>Hangnails are a common condition that you may have experienced at some point in your life. These small strips of torn skin around the edges of our nails can be painful and occasionally lead to complications if not dealt with soon. While they may...</p>
+    
+            <h3>NOVEMBER 29,2023</h3>
+            <h3>Acrylic Nails Vs Gel Nails; What’s the Difference?</h3>
+            <p>Nails are a subtle and chic way of elevating your appearance. Get a new coat of colour and voila, you are a whole new personality. But which nails should you get? Will gel or acrylic nails do the trick? What are acrylic or gel nails anyway? It...</p>
+    
+            <h3>SEPETEMBER 19,2023</h3>
+            <h3>Top 6 Reasons Why Men Should Get a Mani-Pedi</h3>
+            <p>Are manicures and pedicures for men a thing, you ask?   If you are thinking that manicures and pedicures are just for women, then think again! Men too need and deserve to get a mani-pedi. Why walk around with ingrown nails and not-so-well-taken...</p>
+    
+            <h3>JULY 11,2023</h3>
+            <h3>What are Acrylic Nails? Everything You Need to Know</h3>
+            <p>There’s something about getting a fresh set of nails that feels extra rejuvenating. Whether you are looking to add a bit of length to your nails, transform how they look, or add a bit of strength, acrylic nails got you!  However, what may be...</p>
+    
+            <h3>APRIL 17,2023</h3>
+            <h3>Gifts for Ladies:What To Treat A Lady To Other Than Flowers</h3>
+            <p>lwptoc title=”But why is a treat at Luxe Nails Parlour, the best place to treat your loved one though?”] We all have special people in this life that we often want to treat to some good things in life. The big question must be...</p>
+    
+            <h3>JANUARY 11,2023</h3>
+            <h3>9 Common Nail Care Mistakes to Avoid</h3>
+            <p>We can all agree that we all love clean and well-looking nails that scream ‘gorgeous’. That’s why we probably religiously book an appointment at a nail salon frequently. However, in between appointments or even during those...</p>
+        </div>
+        </div>
+
+        <div id="faqs" class="content-section active">
+            <div class="blur-overlay"></div>
+            <div class="content">
+                <h3>Do I have to book an appointment?</h3>
+                <p>Walk-ins are welcome, but kindly note that we accommodate them by availability.
+                    We encourage bookings at least a day prior so that we don’t disappoint in case there are long queues.
+                    Call/Text /WhatsApp 0792003986 to book your appointments
+                    Ps. Kindly note that we take bookings very seriously. If you run late by more than 15 minutes you will have to book another appointment or wait for the next available technician if there is any on that day.</p>
+                <h3>I wasn’t satisfied with my Service, what should I do?</h3>
+                <p>We are extremely sorry we didn’t provide the level of service you should always expect at LNP. Our customer satisfaction track record is one of the things we pride in and we wouldn’t want it any other way. But on the rare occasion, something goes wrong we want to hear about it so we can make things right. Kindly let our front desk know what didn’t go right for you or Call/Text/Whatsapp 0780187367.</p>
+                <h3>I am confused and don’t know what to do on my nails</h3>
+                <p>Being confused is good☺ that’s why we are here. We just don’t jump into working on the nails we examine the nails first then advise on the most appropriate service. The consultation fee is on our tab☺</p>
+                <h3>My nails are damaged what do I do?</h3>
+                <p>We treat damaged nails but the best thing would be us seeing the nails first, that way we would be in a better position to advise.
+                    Please note that we don’t work on infected nails, for that we advise you to see a doctor.</p>
+                <h3>After how long should I come for infills?</h3>
+                <p>This depends on how fast one’s nails grow but generally 2-3 weeks</p>
+                <h3>What are Overlays?</h3>
+                <p>Overlays are a protective layer -could be Gel nail, Acrylic , Acrygel or any other desired nail system applied directly on the natural nails to prevent breakage. Overlays can also be applied to toenails.</p>
+                <h3>What’s the difference between Acrylic Nails, Gel Nails and Stickons?</h3>
+                <P>For Acrylic Nails, an artificial nail tip is fixed and then a layer of acrylic liquid and powder is applied on top. For Gel Nails, an artificial nail tip is fixed and then a layer of hard gel (the thick liquid) is applied then cured under UV light. For stickons, instead of fixing the artificial nail tip halfway the nail plate, it’s glued up to the cuticle line. Stickons can’t be refilled as Acrylic and Gel nails.</P>
+                <h3>What mode of payment do you accept?</h3>
+                <p>Cash, Mpesa and all Cards</p>
+                <h3>Where can I air my complaints and compliments?</h3>
+                <P>We do value your feedback. Just tell us what you liked or didn’t like about us. The positive will keep us motivated and the Negative will help us work on our flaws so we can give you the very best next time.
+                    Drop your feedback on our websites feedback tab here or call/Text/WhatsApp 0792003986.</P>
+                <h3>Do you take Male clients?</h3>
+                <p>YES we do! We offer great gents Manicures and Pedicures.</p>
+                <h3>I am a nail bitter how do I grow my nails?</h3>
+                <p>We have a remedy for nail biters, just visit us.</p>
+                <h3>What are your prices?</h3>
+                <p>Our prices can be found on our Prices page</p>
+                <h3>Where are you located?</h3>
+                <p>We are located on the 10th Floor of Bihi Towers, Moi Avenue, Nairobi Kenya.</p>
+                <h3>I tried reaching you via Instagram DM, but didn’t get a response. Help?</h3>
+                <p>We are sorry for the delayed response. But next time, for faster response, kindly reach us via call or WhatsApp us on 0792003986.</p>
+                <div class="enquiry-form-container" id="faith">
+                    <h2>Enquiry Form</h2>
+                    <form action="#" method="post">
+                        <label for="enquiry">Your Enquiry:</label>
+                        <textarea id="faith"name="enquiry" rows-="10" required></textarea>
+                         <input type="submit" value="submit">
+                         <input type="button" value="cancel">     
+                    </form>
+                </div>
+            </div>
+            </div>
+                
+                <div class="footer">
+                    <p> Paradise Nails Parlour © 2024.All rights reserved.</p>
+                    <p>254 Nairobi,Kenya | Email: paradisenailparlour.com | Phone: +254-792-003-986</p>
+                </div>
+                
+                </body>
+                </html>
